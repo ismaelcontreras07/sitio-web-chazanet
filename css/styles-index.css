@@ -25,7 +25,6 @@ a {
 }
 
   /* Whatsapp */
-
  .btn-wsp{
   display: flex;
   text-align: center;
@@ -116,7 +115,7 @@ header {
     padding-top: 30px;
 }
 
-.hero-container {
+.hero-container, .hero-container-crm-erp {
     position: relative;
     width: 92%;
     height: 500px;
@@ -125,6 +124,11 @@ header {
     background-color: var(--White);
     border-radius: 40px;
     margin-top: 100px;
+}
+
+.hero-container-crm-erp {
+  height: auto;
+  margin-bottom: 300px;
 }
 
 .laptop-container {
@@ -202,6 +206,18 @@ svg[hidden] {
   .ra-labels span {
     font-size: 8vw;
   }
+}
+
+.ul-crm-erp {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.subtitle-crm-erp {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: var(--Grey);
 }
 
 /* From Uiverse.io by Cevorob */ 
@@ -994,7 +1010,6 @@ ul {
     background-color: white;
     position: absolute;
     top: 100%;
-    right: 10;
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.100);
@@ -1020,5 +1035,73 @@ ul {
   li svg {
     width: 1rem;
   }
+
+}
+
+.laptop {
+  width: 75vw;
+  height: 43.5vw;
+  max-width: 650px;
+  max-height: 350px;
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.laptop .laptop-screen {
+  position: relative;
+  left: 7%;
+  height: 94%;
+  width: 86%;
+  background-color: #333;
+  border-radius: 2vw 2vw 0 0;
+  padding: 3.5%;
+}
+.laptop .laptop-screen .laptop-content {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/tuMejorOpcion.webp");
+  background-size: cover;
+}
+.laptop .laptop-screen .laptop-content h1 {
+  margin: 0;
+  color: white;
+  font-family: "Arvo", sans-serif;
+  font-weight: 400;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.laptop .laptop-base {
+  background-color: #bbb;
+  height: 6%;
+  border-radius: 0 0 1vw 1vw;
+}
+.laptop .laptop-base .laptop-trackpad {
+  position: relative;
+  left: 50%;
+  background-color: #666;
+  width: 20%;
+  height: 30%;
+  border-radius: 0 0 1vw 1vw;
+  transform: translateX(-50%);
+}
+
+@media(max-width: 500px) {
+
+.laptop {
+
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-container {
+  height: 450px;
+}
 
 }

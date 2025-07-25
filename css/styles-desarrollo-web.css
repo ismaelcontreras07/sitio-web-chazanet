@@ -1231,7 +1231,6 @@ svg[hidden] {
   top: 25px;
 }
 
-/* Al hacer hover en el padre, desplazamos solo las dos */
 .venta-cards-container:hover .pack-container2 {
   transform: translateX(-35px) translateY(15px);
     z-index:  1;  
@@ -1399,12 +1398,6 @@ svg[hidden] {
   gap: 20px;
   position: relative;
   overflow: hidden;
-}
-
-.opcion-landing:hover, .opcion-sitio:hover, .opcion-ecommerce:hover {
-  background-color: var(--Chaza);
-  transition: all 500ms;
-  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.200);
 }
 
 .opcion-landing, .opcion-ecommerce, .opcion-sitio {
@@ -1715,6 +1708,10 @@ ul {
   }
 }
 
+.iva {
+  font-size: 0.8rem;
+  color: var(--Grey);
+}
 
 @media (max-width: 850px) {
 
